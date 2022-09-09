@@ -2,19 +2,16 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - entry point
+ * main - Entry point of code
  *
  * Return: Always 0
  */
 int main(void)
 {
-	char low;
+	int n;
 
-	for (low = 'a'; low <= 'z'; low++)
-	{
-		putchar(low);
-	}
-	putchar('\n');
-
+	for (n = 0; n < 10; n++)
+		printf("%d", n);
+	printf("\n");
 	return (0);
 }
