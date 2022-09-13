@@ -1,4 +1,3 @@
-#include <unistd.h>
 #include "math.h"
 /**
  * main - Entry
@@ -11,7 +10,9 @@ int main(void)
 	unsigned int c;
 
 	for (c = 0; c < sizeof(putchar); c++)
+	{
 		_putchar(putchar[c]);
+	}
 	_putchar('\n');
 	return (0);
 }
