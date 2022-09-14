@@ -23,7 +23,7 @@ void number(int i)
 }
 /**
  * print_times_table - function that print the n times table, starting with 0
- * @n: the paramater of the function
+ * @val: the paramater of the function
  * Return: void
  */
 void print_times_table(int val)
