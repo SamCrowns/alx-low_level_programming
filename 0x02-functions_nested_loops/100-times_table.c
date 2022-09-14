@@ -53,6 +53,6 @@ void print_times_table(int val)
 				_putchar(' ');
 			}
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 }
