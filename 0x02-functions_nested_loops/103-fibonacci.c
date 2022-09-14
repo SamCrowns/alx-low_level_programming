@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * main - entry
@@ -22,4 +23,3 @@ int main(void)
 	}
 	printf("%ld\n", sum);
 	return (0);
-}
