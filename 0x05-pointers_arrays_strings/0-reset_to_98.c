@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 /**
  * reset_to_98 - program to change the number inside address to 98
  * Return: void
