@@ -16,7 +16,7 @@ char *_strncat(char *dest, char *src, int n)
 		ld++;
 	ls--;
 	if (n < ls)
-		ls = n;
+		ls = n - 1;
 	while (ls >= 0)
 	{
 		*(dest + ld + ls) = *(src + ls);
