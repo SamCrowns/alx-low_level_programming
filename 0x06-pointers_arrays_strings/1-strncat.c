@@ -1,4 +1,18 @@
 #include "main.h"
+
+/**
+ * _strlen - Returns the length of a given string
+ * @s: Takes *s as input
+ * Return: The length of *S
+ */
+int _strlen(char *s)
+{
+	int i;
+
+	for (i = 0; *s != '\0'; i++)
+		s++;
+	return (i);
+}
 /**
  * _strncat - a function that concatenates two strings.
  * Return: char
@@ -8,23 +22,16 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int ls = 0, ld = 0, y;
-	char s;
+	int i = 0, j = 0;
 
-	while (*(src + ls))
-		ls++;
-	while (*(dest + ld))
-		ld++;
-	ls--;
-	if (n < ls)
-		ls = n - 1;
-	while (ls >= 0)
+	while (i < _strlen(dest))
+		i++;
+	while (j < n && src[j] != '\0')
 	{
-		*(dest + ld + ls) = *(src + ls);
-		ls--;
+		dest[i] = src[j];
+		i++;
+		j++;
 	}
-	while (*(dest + y))
-		y++;
-	*(dest + y) = '\0';
+
 	return (dest);
 }
