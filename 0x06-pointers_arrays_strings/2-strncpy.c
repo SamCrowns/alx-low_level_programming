@@ -1,17 +1,4 @@
 #include "main.h"
-/**
- * _strlen - function that return the lenght of a string
- * @s: the string
- * Return: length of s
- */
-int _strlen(char *s)
-{
-	int i = 0;
-
-	while (*(s + i))
-		i++;
-	return (i);
-}
 
 /**
  * _strncpy - function that copies the string pointed by src
@@ -22,28 +9,17 @@ int _strlen(char *s)
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int ld, ls, nn;
+	int j = 0;
 
-	ld = _strlen(dest);
-	ls = _strlen(src) - 1;
-	if (n <= 0)
-		return (dest);
-	n--;
-	if (n > ls)
-		n = ls;
-	while (n >= 0)
+	while (j < n && src[j] != '\0')
 	{
-		*(dest + n) = *(src + n);
-		n--;
+		dest[j] = src[j];
+		j++;
 	}
-	nn = ld - n;
-	if (nn > 0)
+	while (j < n)
 	{
-		while (nn > 0)
-		{
-			*(dest + ls + nn) = '\0';
-			nn--;
-		}
+		dest[j] = '\0';
+		j++;
 	}
 	return (dest);
 }
