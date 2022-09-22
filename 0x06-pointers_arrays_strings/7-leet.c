@@ -6,16 +6,16 @@
  */
 char *leet(char *s)
 {
-	int i = 0, j, l;
+	int i = 0, j;
 	char *letters = "aAeEoOtTlL";
-	char *code = "43071";
+	char *code = "4433007711";
 
 	while (*(s + i))
 	{
 		for (j = 0; j < 10; j++)
 		{
 			if (*(s + i) == *(letters + j))
-				*(s + i) = *(code + (j / 2));
+				*(s + i) = *(code + j);
 		}
 		i++;
 	}
