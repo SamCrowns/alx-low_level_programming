@@ -3,8 +3,8 @@
 /**
  * struct dog - information about the dog
  * @name: name of dog
- * @name: name of dog
- * Return: Infor
+ * @age: age of dog
+ * @owner: owner of dog
  */
 struct dog
 {
