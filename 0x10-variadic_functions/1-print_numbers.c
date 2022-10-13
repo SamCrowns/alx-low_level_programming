@@ -7,12 +7,12 @@
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
+	unsigned int x;
 	va_list ap;
-	unsigned int x = 0;
 
 	va_start(ap, n);
 
-	for (x; x < n; x++)
+	for (x = 0; x < n; x++)
 	{
 		printf("%d", va_arg(ap, int));
 		if (separator != NULL && x < n - 1)
